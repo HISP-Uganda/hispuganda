@@ -1,0 +1,21 @@
+{
+  "name": "hispuganda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "author": "carapai <olupotcharles@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start:live\"",
+    "build": "concurrently \"wsrun --parallel build\"",
+    "term": "yarn workspace terminology"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.6",
+    "concurrently": "^5.1.0",
+    "wsrun": "^5.2.0"
+  }
+}
